@@ -1,22 +1,11 @@
 #include "main.h"
-#include <ctype.h>
-
 /**
  * _islower - Checks for alphabet case
- * or shows 0
- * @c: character in ascii code
+ * @c: character to check
  *
- * Return:  1 for lowercase aand 0 for other
+ * Return: 1 for lowercase and 0 for other
  */
-int _islower(int c)
+int _isalpha(int c)
 {
-	if (c >= 97 && c <= 122)
-	{
-		return (1);
-	}
-	else
-	{
-		return (0);
-	}
-	_putchar('\n');
+	return ((c >= 97 && c <= 122) || (c >= 65 && c <= 90));
 }
