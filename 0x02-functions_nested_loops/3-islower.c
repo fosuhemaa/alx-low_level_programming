@@ -9,5 +9,13 @@
 
 int_islower(int c)
 {
-	return (c >= 97 && c <= 122);
+	if (c >= 97 && c <= 122);
+	{
+		return (1);
+	}
+	else
+	{
+		return (0);
+	}
+	_putchar('\n');
 }
